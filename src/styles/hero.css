@@ -1,0 +1,106 @@
+.hero {
+  position: relative;
+  min-height: 200vh;
+  width: 100%;
+}
+
+.hero__moon {
+  position: fixed;
+  z-index: 2;
+  pointer-events: none;
+  will-change: left, top, width, height, opacity;
+  /* Square viewport keeps the sphere from stretching */
+  aspect-ratio: 1;
+}
+
+.hero__moon canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.hero__scroll-hint {
+  position: fixed;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-text-subtle);
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.hero__scroll-arrow {
+  width: 1px;
+  height: 2rem;
+  background: var(--color-border-strong);
+  position: relative;
+  animation: hero-scroll-bounce 1.6s ease-in-out infinite;
+}
+
+.hero__scroll-arrow::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 8px;
+  height: 8px;
+  border-right: 1px solid var(--color-border-strong);
+  border-bottom: 1px solid var(--color-border-strong);
+}
+
+@keyframes hero-scroll-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(6px);
+    opacity: 1;
+  }
+}
+
+.hero__intro {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--page-gutter);
+  padding-top: min(28vh, 220px);
+  transition: opacity 0.15s ease-out, transform 0.15s ease-out;
+}
+
+.hero__intro-inner {
+  width: min(100%, 720px);
+  padding: 0;
+  text-align: center;
+}
+
+.hero__greeting {
+  color: var(--color-text-muted);
+}
+
+.hero__name {
+  margin: 1.25rem 0;
+  color: var(--color-text);
+}
+
+.hero__role {
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-size: clamp(0.75rem, 2.5vw, 0.9rem);
+  color: var(--color-text-subtle);
+}

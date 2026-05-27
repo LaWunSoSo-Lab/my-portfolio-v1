@@ -1,0 +1,30 @@
+.permanent-marker-regular {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(1.75rem, 8vw, 4.5rem);
+}
+
+.bricolage-grotesque {
+  font-family: var(--font-sans);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.playwrite-nz-basic {
+  font-family: var(--font-script);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.intro--txt {
+  font-size: clamp(1rem, 2.5vw, 1.15rem);
+  line-height: 1.6;
+}
+
+.title--txt {
+  font-size: clamp(1.5rem, 5vw, 2rem);
+}

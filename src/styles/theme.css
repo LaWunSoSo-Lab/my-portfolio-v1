@@ -1,0 +1,50 @@
+:root,
+[data-theme="dark"] {
+  --color-bg: #0a0a0a;
+  --color-bg-elevated: #111111;
+  --color-bg-muted: #1a1a1a;
+  --color-border: #2a2a2a;
+  --color-border-strong: #404040;
+  --color-text: #f5f5f5;
+  --color-text-muted: #a3a3a3;
+  --color-text-subtle: #737373;
+  --color-accent: #ffffff;
+  --color-inverse: #0a0a0a;
+  --color-header-fade: rgba(10, 10, 10, 0.95);
+  --color-header-fade-mid: rgba(10, 10, 10, 0.6);
+  --color-hover-bg: rgba(255, 255, 255, 0.06);
+  --color-btn-primary-hover: #e5e5e5;
+  --color-btn-ghost-hover-bg: rgba(255, 255, 255, 0.04);
+
+  --font-sans: "Bricolage Grotesque", system-ui, sans-serif;
+  --font-display: "Permanent Marker", cursive;
+  --font-script: "Playwrite NZ Basic", cursive;
+
+  --header-height: 72px;
+  --section-padding-y: clamp(4rem, 12vw, 7rem);
+  --content-max-width: 960px;
+  --page-gutter: clamp(1.25rem, 5vw, 3rem);
+
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-theme: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+[data-theme="light"] {
+  --color-bg: #fafafa;
+  --color-bg-elevated: #ffffff;
+  --color-bg-muted: #f0f0f0;
+  --color-border: #e5e5e5;
+  --color-border-strong: #d4d4d4;
+  --color-text: #0a0a0a;
+  --color-text-muted: #525252;
+  --color-text-subtle: #737373;
+  --color-accent: #0a0a0a;
+  --color-inverse: #fafafa;
+  --color-header-fade: rgba(250, 250, 250, 0.95);
+  --color-header-fade-mid: rgba(250, 250, 250, 0.65);
+  --color-hover-bg: rgba(0, 0, 0, 0.05);
+  --color-btn-primary-hover: #262626;
+  --color-btn-ghost-hover-bg: rgba(0, 0, 0, 0.04);
+}
