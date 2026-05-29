@@ -117,11 +117,11 @@ const App: React.FC = () => {
               with your real email and profiles.
             </p>
             <div className="contact-links">
-              <a href="mailto:hello@example.com" className="btn btn--primary bricolage-grotesque">
+              <a href="mailto:lawunsoso.info@gmail.com" className="btn btn--primary bricolage-grotesque">
                 Email me
               </a>
               <a
-                href="https://github.com"
+                href="https://github.com/LaWunSoSo-Lab"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn--ghost bricolage-grotesque"

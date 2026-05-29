@@ -21,7 +21,7 @@ const SiteHeader: React.FC = () => {
           className="site-header__logo"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
-          LWS
+          LWSS
         </button>
         <nav className="site-header__nav" aria-label="Main">
           {NAV_ITEMS.map(({ label, id }) => (
