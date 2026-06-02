@@ -1,3 +1,15 @@
+/**
+ * Main App component that orchestrates the portfolio layout and content.
+ * 
+ * This component serves as the root layout containing:
+ * - Header navigation with theme switching
+ * - Hero section with animated moon scene
+ * - About section with introduction
+ * - Projects showcase
+ * - Education and background section
+ * - Contact section with links
+ * - Footer
+ */
 import React from "react";
 import "./styles/main.css";
 import "./styles/font.css";
@@ -7,6 +19,15 @@ import SiteHeader from "./components/layout/SiteHeader.tsx";
 import SiteFooter from "./components/layout/SiteFooter.tsx";
 import HeroSection from "./components/hero/HeroSection.tsx";
 
+/**
+ * PROJECTS array - Contains portfolio project metadata
+ * Each project includes:
+ * - title: Project name
+ * - meta: Technologies used
+ * - desc: Brief project description
+ * 
+ * Update these with your actual projects when ready.
+ */
 const PROJECTS = [
   {
     title: "Nebula Commerce",
@@ -25,6 +46,16 @@ const PROJECTS = [
   },
 ];
 
+/**
+ * App Component
+ * 
+ * Main application component that wraps the entire portfolio with:
+ * 1. ThemeProvider - Enables light/dark theme switching
+ * 2. SiteHeader - Navigation bar with theme toggle
+ * 3. HeroSection - Animated intro with moon scene
+ * 4. Main content sections (About, Projects, Education, Contact)
+ * 5. SiteFooter - Copyright footer
+ */
 const App: React.FC = () => {
   return (
     <ThemeProvider>
@@ -32,6 +63,7 @@ const App: React.FC = () => {
       <HeroSection />
 
       <main className="page-main">
+        {/* About Section */}
         <section id="about" className="section" aria-labelledby="about-heading">
           <div className="section__inner">
             <p className="section__label bricolage-grotesque">About</p>
@@ -50,6 +82,7 @@ const App: React.FC = () => {
           </div>
         </section>
 
+        {/* Projects Section - Maps over PROJECTS array to create project cards */}
         <section id="projects" className="section" aria-labelledby="projects-heading">
           <div className="section__inner">
             <p className="section__label bricolage-grotesque">Selected Work</p>
@@ -71,6 +104,7 @@ const App: React.FC = () => {
           </div>
         </section>
 
+        {/* Education Section */}
         <section id="education" className="section" aria-labelledby="education-heading">
           <div className="section__inner">
             <p className="section__label bricolage-grotesque">Background</p>
@@ -106,6 +140,7 @@ const App: React.FC = () => {
           </div>
         </section>
 
+        {/* Contact Section */}
         <section id="contact" className="section" aria-labelledby="contact-heading">
           <div className="section__inner">
             <p className="section__label bricolage-grotesque">Get in touch</p>
