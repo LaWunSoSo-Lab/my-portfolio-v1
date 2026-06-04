@@ -1,0 +1,11 @@
+# Development Guidelines
+
+- Follow existing project conventions.
+- Reuse existing utilities and components before creating new ones.
+- Use TypeScript for new code.
+- Keep changes focused on the requested task.
+- Do not introduce unnecessary dependencies.
+- Add tests for new functionality.
+- Update documentation when behavior changes.
+- Prefer readability and maintainability.
+- Explain significant architectural changes before implementation.

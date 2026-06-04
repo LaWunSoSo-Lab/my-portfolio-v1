@@ -1,0 +1,12 @@
+---
+alwaysApply: true
+---
+Follow the existing project structure.
+
+Place code in the appropriate feature folder.
+
+Avoid creating new top-level directories unless requested.
+
+Prefer reusable components over duplicated code.
+
+Keep business logic separate from UI components.

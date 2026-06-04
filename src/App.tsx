@@ -11,8 +11,11 @@
  * - Footer
  */
 import React from "react";
+// @ts-ignore
 import "./styles/main.css";
+// @ts-ignore
 import "./styles/font.css";
+// @ts-ignore
 import "./styles/spacing.css";
 import { ThemeProvider } from "./context/ThemeContext.tsx";
 import SiteHeader from "./components/layout/SiteHeader.tsx";

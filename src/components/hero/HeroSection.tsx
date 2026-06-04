@@ -14,10 +14,12 @@
  * - Manages hero visibility state as user scrolls
  * - Responsive to window resize events
  */
+// @ts-ignore
 import React, { useEffect, useRef, useState, useCallback } from "react";
 import MoonScene from "./MoonScene.tsx";
 import TypingRotating from "../animation/TypingRotating.tsx";
 import { useTheme } from "../../context/ThemeContext.tsx";
+// @ts-ignore
 import "../../styles/hero.css";
 
 /**

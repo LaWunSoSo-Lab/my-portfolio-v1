@@ -1,0 +1,19 @@
+---
+description: 
+alwaysApply: true
+---
+
+Use TypeScript for all new files.
+
+Prefer explicit types for exported functions.
+
+Avoid using any.
+
+Use interfaces for public API contracts.
+
+Use strict null checks.
+
+When fixing TypeScript issues:
+- Fix types before suppressing errors.
+- Use @ts-ignore only when requested.
+- Do not disable strict mode.
